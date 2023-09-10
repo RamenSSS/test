@@ -11,6 +11,7 @@ function light() {
     change('dark_link','light_link');
     change('dark_table','light_table');
     document.getElementById('btn_darklight').innerText = '다크 모드'
+    status='light'
 }
 
 function dark() {
@@ -18,4 +19,12 @@ function dark() {
     change('light_link','dark_link');
     change('light_table','dark_table');
     document.getElementById('btn_darklight').innerText = '라이트 모드'
+    status='dark'
 }
+
+function darklight() {
+    if (status=='dark'){light()}
+    if (status=='light'){dark()}
+}
+
+status = 'dark'
