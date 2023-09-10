@@ -26,3 +26,5 @@ function darklight() {
     if (status=='light'){dark()}
     else {light()}
 }
+
+location.href = "2309.html?" + status;
