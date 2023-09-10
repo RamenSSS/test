@@ -27,4 +27,4 @@ function darklight() {
     else {light()}
 }
 
-location.href = "2309.html?" + status;
+status='dark'
