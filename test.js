@@ -23,8 +23,6 @@ function dark() {
 }
 
 function darklight() {
-    if (status=='dark'){light()}
     if (status=='light'){dark()}
+    else {light()}
 }
-
-status = 'dark'
