@@ -7,14 +7,15 @@ function change(before, after) {
 }
 
 function light() {
-      change(dark,light);
-      change(dark_link,light_link);
-      change(dark_table,light_table);
+    change(dark,light);
+    change(dark_link,light_link);
+    change(dark_table,light_table);
+    document.getElementById('btn_darklight').innerText = '다크 모드'
 }
 
 function dark() {
-      change(light,dark);
-      change(light_link,dark_link);
-      change(light_table,dark_table);
+    change(light,dark);
+    change(light_link,dark_link);
+    change(light_table,dark_table);
+    document.getElementById('btn_darklight').innerText = '라이트 모드'
 }
-      
