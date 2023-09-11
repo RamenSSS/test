@@ -4,18 +4,17 @@
     <link rel="apple-touch-icon" href="android-icon-72x72.png"/> 
     <title>2023년 9월</title>
 </head><body class="dark">
-    <div style="text-align:center">
     <div style="width:85%;">
     <div style="float:left;width:49%;">
-        <button class="main" onclick=" window.location.href='./'">메인으로</button>
+        <button class="main" onclick=" window.location.href='./?'+status">메인으로</button>
     </div>
     <div style="float:right;width:49%;text-align:right;">
         <button class="main" id="btn_darklight" style="width:100px" onclick="darklight()">라이트 모드</button>
     </div>
-    <div>
+    <div style="text-align:center">
                 <button class="btn" style="color:#777" onclick='alert('업데이트 예정')';>◀</button>            
                 <b style="font-size:50px">⠀⠀2023. 09⠀⠀</b>
-                <button class="btn" onclick=" window.location.href='./2310'">
+                <button class="btn" onclick=" window.location.href='./2310?'+status">
                     <div class="shown">▶</div>
                     <div class="hidden">▷</div>
                 </button>
@@ -129,7 +128,7 @@
                 <td><date>30</date>
                 </td>
             </tr>
-        </tbody></table></div></div>
+        </tbody></table></div>
     <style>
     a {
         color: inherit;
