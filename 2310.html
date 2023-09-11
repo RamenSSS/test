@@ -2,137 +2,230 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="icon" href="android-icon-72x72.png"/> 
     <link rel="apple-touch-icon" href="android-icon-72x72.png"/> 
-    <title>2023년 10월</title>
-    <style>
-        .mem {
-            padding: 10px 10px;
-            background-color: #444444;
-            color: #ffffff;
-            display: none;
-            position: absolute;
-        }
-        .sch:hover + .mem {
-            display: block;
-        }
-    </style></head>
-    <body><button onclick=" window.location.href='/'">메인으로 돌아가기</button><div style="text-align:center">
-    <button onclick=" window.location.href='/2309'">◀</button>
-    <strong style="font-size:50px">⠀⠀10월⠀⠀</strong>
-    <button>⠀⠀</button>
-<table style="margin-left:auto;margin-right:auto;width:80%;table-layout:fixed;border:1px solid black">
+    <title>2023년 10월</title></head>
+    <body class="dark"><div style="width:85%;margin-left:auto;margin:auto;">
+    <div style="float:left;width:49%;">
+        <button class="main" onclick=" window.location.href='./?'+status">메인으로</button>
+    </div>
+    <div style="float:right;width:49%;text-align:right;">
+        <button class="main" id="btn_darklight" style="width:100px" onclick="darklight()">라이트 모드</button>
+    </div>
+        <div style="text-align:center">
+    <button class="btn" onclick=" window.location.href='./2309?'+status">
+                    <div class="shown">◀</div>
+                    <div class="hidden">◁</div>
+                </button>
+    <b style="font-size:50px">⠀⠀2023. 10⠀⠀</b>
+    <button class="btn" style="color:#777" onclick="alert('업데이트 예정')";>▶</button></div>
+<table class="dark_table">
         <thead>
-            <tr style="height:50px;font-size:20">
-                <th style="vertical-align:middle;">일</th>
-                <th style="vertical-align:middle;">월</th>
-                <th style="vertical-align:middle;">화</th>
-                <th style="vertical-align:middle;">수</th>
-                <th style="vertical-align:middle;">목</th>
-                <th style="vertical-align:middle;">금</th>
-                <th style="vertical-align:middle;">토</th>
+            <tr style="height:50px;">
+                <th>일</th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+                <th>토</th>
             </tr>
         
         </thead><tbody>
-            <!--<br><text class="sch" style="font-size:12px">[종류] 이름</text><mem class="mem" style="font-size:8px"><t style="font-size:13px">00:00</t><br>멤버</mem>-->
-            <tr style="height:100px">
-                <td><strong>1</strong>
-                  <br><text class="sch" style="font-size:12px">[콘서트] 뉴욕</text><mem class="mem" style="font-size:8px">LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</mem>
+            <!--<br><sch>[종류] 이름</sch><mem><t>00:00</t><br>멤버</mem>-->
+            <tr>
+                <td><date>1</date>
+                  <br><sch>[콘서트] 뉴욕</sch><mem>LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</mem>
                 </td>
-                <td><strong>2</strong>
+                <td><date>2</date>
                 </td>
-                <td><strong>3</strong>
-                  <br><text class="sch" style="font-size:12px">[기념일] 수민 생일</text>
-                  <br><text class="sch" style="font-size:12px">[콘서트] 타이슨스</text><mem class="mem" style="font-size:8px">LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</mem>
+                <td><date>3</date>
+                  <br><sch>[기념일] 수민 생일</sch>
+                  <br><sch>[콘서트] 타이슨스</sch><mem>LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</mem>
                 </td>
-                <td><strong>4</strong>
+                <td><date>4</date>
                 </td>
-                <td><strong>5</strong>
-                  <br><text class="sch" style="font-size:12px">[콘서트] 애크런</text><mem class="mem" style="font-size:8px">LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</mem>
+                <td><date>5</date>
+                  <br><sch>[콘서트] 애크런</sch><mem>LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</mem>
                 </td>
-                <td><strong>6</strong>
+                <td><date>6</date>
                 </td>
-                <td><strong>7</strong>
-                  <br><text class="sch" style="font-size:12px">[콘서트] 캔자스시티</text><mem class="mem" style="font-size:8px">LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</mem>
-                </td>
-            </tr>
-            <tr style="height:100px">
-                <td><strong>8</strong>
-                </td>
-                <td><strong>9</strong>
-                  <br><text class="sch" style="font-size:12px">[콘서트] 휴스턴</text><mem class="mem" style="font-size:8px">LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</mem>
-                </td>
-                <td><strong>10</strong>
-                </td>
-                <td><strong>11</strong>
-                  <br><text class="sch" style="font-size:12px">[음반] EVOLution 데뷔</text>
-                  <br><text class="sch" style="font-size:12px">[콘서트] 포트워스</text><mem class="mem" style="font-size:8px">LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</mem>
-                </td>
-                <td><strong>12</strong>
-                </td>
-                <td><strong>13</strong>
-                  <br><text class="sch" style="font-size:12px">[기념일] 나경,소현 생일</text>
-                </td>
-                <td><strong>14</strong>
-                  <br><text class="sch" style="font-size:12px">[콘서트] 로스앤젤레스</text><mem class="mem" style="font-size:8px">LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</mem>
+                <td><date>7</date>
+                  <br><sch>[콘서트] 캔자스시티</sch><mem>LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</mem>
                 </td>
             </tr>
-            <tr style="height:100px">
-                <td><strong>15</strong>
+            <tr>
+                <td><date>8</date>
                 </td>
-                <td><strong>16</strong>
+                <td><date>9</date>
+                  <br><sch>[콘서트] 휴스턴</sch><mem>LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</mem>
                 </td>
-                <td><strong>17</strong>
+                <td><date>10</date>
                 </td>
-                <td><strong>18</strong>
+                <td><date>11</date>
+                  <br><sch>[음반] EVOLution 데뷔</sch>
+                  <br><sch>[콘서트] 포트워스</sch><mem>LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</mem>
                 </td>
-                <td><strong>19</strong>
+                <td><date>12</date>
                 </td>
-                <td><strong>20</strong>
+                <td><date>13</date>
+                  <br><sch>[기념일] 나경,소현 생일</sch>
                 </td>
-                <td><strong>21</strong>
-                </td>
-            </tr>
-            <tr style="height:100px">
-                <td><strong>22</strong>
-                </td>
-                <td><strong>23</strong>
-                </td>
-                <td><strong>24</strong>
-                  <br><text class="sch" style="font-size:12px">[기념일] 지우 생일</text>
-                </td>
-                <td><strong>25</strong>
-                </td>
-                <td><strong>26</strong>
-                </td>
-                <td><strong>27</strong>
-                </td>
-                <td><strong>28</strong>
+                <td><date>14</date>
+                  <br><sch>[콘서트] 로스앤젤레스</sch><mem>LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</mem>
                 </td>
             </tr>
-            <tr style="height:100px">
-                <td><strong>29</strong>
+            <tr>
+                <td><date>15</date>
                 </td>
-                <td><strong>30</strong>
+                <td><date>16</date>
                 </td>
-                <td><strong></strong>
+                <td><date>17</date>
                 </td>
-                <td><strong></strong>
+                <td><date>18</date>
                 </td>
-                <td><strong></strong>
+                <td><date>19</date>
                 </td>
-                <td><strong></strong>
+                <td><date>20</date>
                 </td>
-                <td><strong></strong>
+                <td><date>21</date>
+                </td>
+            </tr>
+            <tr>
+                <td><date>22</date>
+                </td>
+                <td><date>23</date>
+                </td>
+                <td><date>24</date>
+                  <br><sch>[기념일] 지우 생일</sch>
+                </td>
+                <td><date>25</date>
+                </td>
+                <td><date>26</date>
+                </td>
+                <td><date>27</date>
+                </td>
+                <td><date>28</date>
+                </td>
+            </tr>
+            <tr>
+                <td><date>29</date>
+                </td>
+                <td><date>30</date>
+                </td>
+                <td><date></date>
+                </td>
+                <td><date></date>
+                </td>
+                <td><date></date>
+                </td>
+                <td><date></date>
+                </td>
+                <td><date></date>
                 </td>
             </tr>
         </tbody>
+    </table>
     <style>
-      table {
+      a {
+        color: inherit;
+        text-decoration: none;
+    }
+    .title_text {
+        font-size: 50px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .btn {
+        font-size: 50px;
+        font-weight: bold;
+        background-color: transparent;
+        border: transparent;
+        color: inherit;
+    }
+        .hidden {
+            display:none;
+        }
+        .btn:hover .shown {
+            display:none;
+        }
+        .btn:hover .hidden {
+            display:block;
+        }            
+        .main {
+            font-weight: bold;
+            background-color: #6e2cff;
+            border: 2px solid #6e2cff;
+            border-radius: 5px;
+            color: inherit;
+            width: 75px;
+            height:25px;
+        }
+        .main:hover {
+            background-color: transparent;
+            color: #6e2cff;
+        }
+            
+    table {
+        margin-left: auto;
+        margin-right: auto;
         width: 100%;
-        border: 1px solid #000000;
+        table-layout: fixed;
+        font-size: 25px;
+        margin-top: 40px;
+        margin-bottom: 40px;
         border-collapse: collapse;
-      }
-      th, td {
-        border: 1px solid #000000;
-        vertical-align : top;
-      }
-    </style></table></div></body></html>
+    }
+  td {
+    vertical-align : top;
+  }
+        th {
+            vertical-align: middle;
+            font-size:20;
+        }
+        tbody tr {
+            height:100px;
+        }
+        .dark_table td {
+            border: 1px solid #393939;
+        }
+        .dark_table th {
+            border: 1px solid #393939;
+        }
+        .light_table td {
+            border: 1px solid #ddd;
+        }
+        .light_table th {
+            border: 1px solid #ddd;
+        }
+    .dark {
+        color: #fff;
+        background-color: #1f2023;
+    }
+    .dark_table {
+        border: 2px solid white;
+    }
+    .light {
+        color: #000;
+        background-color: #fff;
+    }
+    .light_table {
+        border: 2px solid black;
+    }
+        mem {
+    padding: 10px 10px;
+    background-color: rgba(70,70,70,0.8);
+    color: #ffffff;
+    display: none;
+    position: absolute;
+            font-size:8px;
+            word-break:keep-all;
+}
+        sch {font-size:12px}
+sch:hover + mem {
+    display: block;
+}
+        t {font-size:13px}
+        date {
+            font-size: 12px;
+            font-weight:bolder;
+        }
+    </div></style><script src="test.js"></script></body></html>
