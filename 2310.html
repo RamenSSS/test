@@ -2,19 +2,21 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="icon" href="android-icon-72x72.png"/> 
     <link rel="apple-touch-icon" href="android-icon-72x72.png"/> 
-    <title>2023년 10월</title></head>
-    <body class="dark"><div style="width:85%;margin-left:auto;margin:auto;">
-    <div style="float:left;width:49%;">
+    <link rel="stylesheet" href="style.css">
+    <title>2023년 10월</title>
+</head>
+<body class="dark"><div style="width:85%;margin-left:auto;margin:auto;">
+    <div class="left" style="width:49%;">
         <button class="main" onclick=" window.location.href='./?'+status">메인으로</button>
     </div>
-    <div style="float:right;width:49%;text-align:right;">
+    <div class="right" style="width:49%;">
         <button class="main" id="btn_darklight" style="width:100px" onclick="darklight()">라이트 모드</button>
     </div>
-        <div style="text-align:center">
+    <div class="center">
     <button class="btn" onclick=" window.location.href='./2309?'+status">
                     <div class="shown">◀</div>
                     <div class="hidden">◁</div>
-                </button>
+    </button>
     <b style="font-size:50px">⠀⠀2023. 10⠀⠀</b>
     <button class="btn" style="color:#777" onclick="alert('업데이트 예정')";>▶</button></div>
 <table class="dark_table">
@@ -122,110 +124,7 @@
                 <td><date></date>
                 </td>
             </tr>
-        </tbody>
-    </table>
-    <style>
-      a {
-        color: inherit;
-        text-decoration: none;
-    }
-    .title_text {
-        font-size: 50px;
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
-    .btn {
-        font-size: 50px;
-        font-weight: bold;
-        background-color: transparent;
-        border: transparent;
-        color: inherit;
-    }
-        .hidden {
-            display:none;
-        }
-        .btn:hover .shown {
-            display:none;
-        }
-        .btn:hover .hidden {
-            display:block;
-        }            
-        .main {
-            font-weight: bold;
-            background-color: #6e2cff;
-            border: 2px solid #6e2cff;
-            border-radius: 5px;
-            color: inherit;
-            width: 75px;
-            height:25px;
-        }
-        .main:hover {
-            background-color: transparent;
-            color: #6e2cff;
-        }
-            
-    table {
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        table-layout: fixed;
-        font-size: 25px;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        border-collapse: collapse;
-    }
-  td {
-    vertical-align : top;
-  }
-        th {
-            vertical-align: middle;
-            font-size:20;
-        }
-        tbody tr {
-            height:100px;
-        }
-        .dark_table td {
-            border: 1px solid #393939;
-        }
-        .dark_table th {
-            border: 1px solid #393939;
-        }
-        .light_table td {
-            border: 1px solid #ddd;
-        }
-        .light_table th {
-            border: 1px solid #ddd;
-        }
-    .dark {
-        color: #fff;
-        background-color: #1f2023;
-    }
-    .dark_table {
-        border: 2px solid white;
-    }
-    .light {
-        color: #000;
-        background-color: #fff;
-    }
-    .light_table {
-        border: 2px solid black;
-    }
-        mem {
-    padding: 10px 10px;
-    background-color: rgba(70,70,70,0.8);
-    color: #ffffff;
-    display: none;
-    position: absolute;
-            font-size:8px;
-            word-break:keep-all;
-}
-        sch {font-size:12px}
-sch:hover + mem {
-    display: block;
-}
-        t {font-size:13px}
-        date {
-            font-size: 12px;
-            font-weight:bolder;
-        }
-    </div></style><script src="test.js"></script></body></html>
+        </tbody></table></div>
+    <style></style>
+    <script src="script.js"></script>
+</body></html>
