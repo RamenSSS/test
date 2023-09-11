@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="ko"><head>
     <meta charset="UTF-8">
     <link rel="icon" href="android-icon-72x72.png"> 
     <link rel="apple-touch-icon" href="android-icon-72x72.png"> 
+    <link rel="stylesheet" href="style.css">
     <title>tripleS 스케줄</title>
 </head>
 <body class="dark">
-    <div style="text-align:center;margin-left:auto;margin-right:auto;width:85%;">
-    <div style="text-align:right">
+    <div class="center" style="width:85%;">
+    <div class="right">
         <button class="main" id="btn_darklight" style="width:100px" onclick="darklight()">라이트 모드</button>
     </div>
     <b style="font-size:50px;"><a href="https://triplescosmos.com">tripleS</a> 스케줄</b>
@@ -40,7 +41,7 @@
             </tr>
         </tbody>
     </table>
-    <div style="float:left;width:40%;text-align:left;word-break:keep-all;font-size:15px">제작자 : 라멘
+    <div class="left" style="width:40%;word-break:keep-all;font-size:15px">제작자 : 라멘
         <br><br>문의사항 :
         <ul style="padding-left: 25px;">
             <li><a class="link" href="https://open.kakao.com/o/sI2efR7e">오픈카톡</a></li>
@@ -48,64 +49,22 @@
             <li>Twitter : <a class="link" href="https://twitter.com/Ramen_SSS">@Ramen_SSS</a></li>
             <li>Discord : ramen__</li>
     </ul></div>
-    <div style="float:right;width:40%;text-align:right;word-break:keep-all">Thanks to <a class="link" href="https://twitter.com/kuipertwt">@kuipertwt</a> for domain</div>
+    <div class="right" style="width:40%;word-break:keep-all">Thanks to <a class="link" href="https://twitter.com/kuipertwt">@kuipertwt</a> for domain</div>
     </div>
 <style>
-    a {
-        color: inherit;
-        text-decoration: none;
-    }
-    .link {
-        color: #d92;
-    }
-    .year {
-        font-size: 40px;
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
-    .unupdate {
-        color: #777;
-    }
-    table {
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        table-layout: fixed;
-        font-size: 25px;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        border: 3px solid white;
-    }
-    .dark {
-        color: #fff;
-        background-color: #1f2023;
-    }
     .dark_table {
         border: 3px solid white;
-    }
-    .light {
-        color: #000;
-        background-color: #fff;
     }
     .light_table {
         border: 3px solid black;
     }
-    .link {
-        color: #6e2cff;
+    tdody tr {
+        height: 50px;
     }
-    .main {
-            font-weight: bold;
-            background-color: #6e2cff;
-            border: 2px solid #6e2cff;
-            border-radius: 5px;
-            color: inherit;
-            width: 75px;
-            height: 25px;
-        }
-        .main:hover {
-            background-color: transparent;
-            color: #6e2cff;
-        }
+    td {
+        text-align: center;
+        vertical-align: middle;
+    }
 </style>
-<script src="test.js"></script>
+<script src="script.js"></script>
 </body></html>
