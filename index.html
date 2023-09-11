@@ -1,6 +1,5 @@
-<!DOCTYPE html>
 <html lang="ko"><head>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <meta charset="UTF-8">
     <link rel="icon" href="android-icon-72x72.png"> 
     <link rel="apple-touch-icon" href="android-icon-72x72.png"> 
@@ -8,13 +7,13 @@
     <title>tripleS 스케줄</title>
 </head>
 <body class="dark">
-    <div class="center" style="width:85%;">
+    <div class="center" style="width:90%;">
     <div class="right">
         <button class="main" id="btn_darklight" style="width:100px" onclick="darklight()">라이트 모드</button>
     </div>
-        <div style="clear:both">
-        <b style="font-size:50px;"><a href="https://triplescosmos.com">tripleS</a> 스케줄</b></div>
-    <table class="dark_table">
+        <div class="title" style="clear:both">
+        <b><a href="https://triplescosmos.com">tripleS</a> 스케줄</b></div>
+    <table class="dark_table" style="">
         <thead>
             <tr>
                 <th colspan="4">
@@ -43,7 +42,8 @@
             </tr>
         </tbody>
     </table>
-    <div class="left" style="width:40%;word-break:keep-all;font-size:15px">제작자 : 라멘
+    <hr><div class="under" style="clear:both">
+    <div class="left" style="width:50%;">제작자 : 라멘
         <br><br>문의사항 :
         <ul style="padding-left: 25px;">
             <li><a class="link" href="https://open.kakao.com/o/sI2efR7e">오픈카톡</a></li>
@@ -51,7 +51,7 @@
             <li>Twitter : <a class="link" href="https://twitter.com/Ramen_SSS">@Ramen_SSS</a></li>
             <li>Discord : ramen__</li>
     </ul></div>
-    <div class="right" style="width:40%;word-break:keep-all">Thanks to <a class="link" href="https://twitter.com/kuipertwt">@kuipertwt</a> for domain</div>
+    <div class="right" style="width:50%;w">Thanks to <a class="link" href="https://twitter.com/kuipertwt">@kuipertwt</a> for domain</div></div>
     </div>
 <style>
     .dark_table {
@@ -60,13 +60,65 @@
     .light_table {
         border: 3px solid black;
     }
-    tdody tr {
-        height: 50px;
+    tbody tr {
+        height: 100px;
+        font-size: 40px;
     }
     td {
         text-align: center;
         vertical-align: middle;
     }
-</style>
+    .year {
+        font-size:60px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .under {
+word-break: keep-all;
+font-size: 15px;
+    }
+.title {
+font-size:50px;
+}
+    @media (min-width: 427px) and (max-width: 770px) {
+        tbody tr {
+            height: 75px;
+            font-size: 30px;
+        }
+        .year {
+            font-size:45px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .under {
+            font-size:10px
+        }
+table {
+margin-top: 30px;
+margin-bottom: 30px;
+}
+    }
+    @media (max-width: 427px) {
+.title {
+font-size:40px;
+}
+tbody tr {
+            height: 60px;
+            font-size: 20px;
+        }
+        .year {
+            font-size:30px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+.under {
+            font-size:7px
+        }
+table {
+margin-top: 20px;
+margin-bottom: 20px;
+}
+    }</style>
 <script src="script.js"></script>
+
 </body></html>
