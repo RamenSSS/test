@@ -6,16 +6,16 @@
     <title>tripleS 스케줄</title>
 </head>
 <body class="dark">
+    <div style="text-align:center;margin-left:auto;margin-right:auto;width:85%;">
     <div style="text-align:right">
-        <button id="btn_darklight" style="width:100px" onclick="darklight()">라이트 모드</button>
+        <button class="main" id="btn_darklight" style="width:100px" onclick="darklight()">라이트 모드</button>
     </div>
-    <div style="text-align:center;">
-    <strong style="font-size:50px;"><a href="https://triplescosmos.com">tripleS</a> 스케줄</strong>
+    <b style="font-size:50px;"><a href="https://triplescosmos.com">tripleS</a> 스케줄</b>
     <table class="dark_table">
         <thead>
             <tr>
                 <th colspan="4">
-                    <p  class="year">2023년</p>
+                    <p class="year">2023년</p>
                 </th>
             </tr>
         </thead>
@@ -39,9 +39,17 @@
                 <td class="unupdate">12월</td>
             </tr>
         </tbody>
-    </table></div>
-    <div style="float:left;width:49%;text-align:left;word-break:keep-all">문의사항은 <a class="link dark_link" href="https://open.kakao.com/o/sI2efR7e">오픈카톡</a>이나 디시인사이드 <a class="link dark_link" href="https://gall.dcinside.com/m/triplescosmos/10147">해당 글</a>에 남겨주시면 됩니다.</div>
-    <div style="float:right;width:49%;text-align:right;word-break:keep-all">Thanks to <a class="link dark_link" href="https://twitter.com/kuipertwt">@kuipertwt</a> for domain</div>
+    </table>
+    <div style="float:left;width:40%;text-align:left;word-break:keep-all;font-size:15px">제작자 : 라멘
+        <br><br>문의사항 :
+        <ul style="padding-left: 25px;">
+            <li><a class="link" href="https://open.kakao.com/o/sI2efR7e">오픈카톡</a></li>
+            <li><a class="link" href="https://gall.dcinside.com/m/triplescosmos/10147">dcinside</a></li>
+            <li>Twitter : <a class="link" href="https://twitter.com/Ramen_SSS">@Ramen_SSS</a></li>
+            <li>Discord : ramen__</li>
+    </ul></div>
+    <div style="float:right;width:40%;text-align:right;word-break:keep-all">Thanks to <a class="link" href="https://twitter.com/kuipertwt">@kuipertwt</a> for domain</div>
+    </div>
 <style>
     a {
         color: inherit;
@@ -61,7 +69,7 @@
     table {
         margin-left: auto;
         margin-right: auto;
-        width: 750px;
+        width: 100%;
         table-layout: fixed;
         font-size: 25px;
         margin-top: 40px;
@@ -75,9 +83,6 @@
     .dark_table {
         border: 3px solid white;
     }
-    .dark_link {
-        color: #d92;
-    }
     .light {
         color: #000;
         background-color: #fff;
@@ -85,9 +90,22 @@
     .light_table {
         border: 3px solid black;
     }
-    .light_link {
-        color: #07d;
+    .link {
+        color: #6e2cff;
     }
+    .main {
+            font-weight: bold;
+            background-color: #6e2cff;
+            border: 2px solid #6e2cff;
+            border-radius: 5px;
+            color: inherit;
+            width: 75px;
+            height: 25px;
+        }
+        .main:hover {
+            background-color: transparent;
+            color: #6e2cff;
+        }
 </style>
 <script src="test.js"></script>
 </body></html>
