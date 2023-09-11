@@ -27,4 +27,10 @@ function darklight() {
     else {light()}
 }
 
-status='dark'
+status = 'dark'
+data = location.href.split('?')
+if (data.length==2){
+    if (data[1]=='light'){
+        status='light'
+    }
+}
