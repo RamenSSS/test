@@ -1,0 +1,106 @@
+.detail_hidden {
+        display: none;
+}
+.hidden {
+  display:none;
+}
+.btn:hover .shown {
+  display:none;
+}
+.btn:hover .hidden {
+  display:block;
+}
+.btn {
+  font-size: 50px;
+  font-weight: bold;
+  background-color: transparent;
+  border: transparent;
+  color: inherit;
+}
+td {
+  vertical-align : top;
+  text-align: left;
+  font-size: 12px;
+}
+th {font-size:20;}
+    #title {
+            margin-left: 50px;
+            margin-right: 50px;
+            font-size: 50px;
+    }
+hv {
+  padding: 10px 10px;
+  background-color: rgba(70,70,70,0.8);
+  color: #ffffff;
+  display: none;
+  position: absolute;
+  word-break:keep-all;
+}
+.sch:hover + hv {
+  display: block;
+}
+.mem {font-size: 0.75em}
+date {
+  font-weight:bolder;
+}
+        p {
+            margin-top:0px;
+            margin-bottom:0px;
+        }
+.simple .detail_shown {display: none;}
+.simple .detail_hidden {display: block;}
+#left_btn_h {display:none;}
+    @media (max-width:600px) {
+        .btn {
+            font-size: 40px;
+        }
+        #btn_simple {display:none;}
+        #title {
+            font-size: 40px;
+        }
+        .detail_shown {
+            display: none;
+        }
+        .detail_hidden {
+            display: block;
+        }
+        table {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        tbody tr {
+  height:85px;
+}
+    }
+    @media (max-width:450px) {
+        #title {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+table {
+margin-top: 20px;
+margin-bottom: 20px;
+}
+    }
+    @media (max-width:400px) {
+        #title {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        #top {
+            text-align: left !important;
+        }
+        #left_btn {display:none;}
+        #left_btn_h {display:inline-block !important;}
+        .btn {
+            font-size:30px;
+        }
+        td {font-size:10px}
+        date {font-size:1.5em}
+    }
+    @media (min-width: 1450px) {
+#body {
+width: 1296px !important;
+}
+td {font-size:15px}
+}

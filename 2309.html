@@ -4,6 +4,7 @@
     <link rel="icon" href="android-icon-72x72.png"> 
     <link rel="apple-touch-icon" href="android-icon-72x72.png"> 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="schstyle.css">
     <title>2023년 9월</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,22 +14,23 @@
     </style>
 </head><body class="dark">
     <div style="width:90%;" id="body">
-    <div class="left" style="width:50%;">
-        <button class="main" onclick=" window.location.href='./?'+status">메인으로</button>
+    <div class="left">
+        <button class="main" onclick=" window.location.href='./?'+status+status2">메인으로</button>
     </div>
-    <div class="right" style="width:50%;">
+    <div class="right">
         <button class="main" id="btn_simple" style="width:110px" onclick="simple()">간단하게 보기</button>
         <button class="main" id="btn_darklight" style="width:100px" onclick="darklight()">라이트 모드</button>
     </div>
-    <div id="top" style="text-align-center">
+    <div id="top">
         <button style="color:#777" onclick="alert('업데이트 예정')" class="btn" id="left_btn">◀</button>            
         <b id="title">2023. 09</b>
-        <button style="color:#777; display:none;" onclick="alert('업데이트 예정')" class="btn" id="left_btn_h">◀</button><button class="btn" onclick=" window.location.href='./2310?'+status">
+        <button style="color:#777;" onclick="alert('업데이트 예정')" class="btn" id="left_btn_h">◀</button>
+        <button class="btn" onclick=" window.location.href='./2310?'+status+status2">
             <div class="shown">▶</div>
             <div class="hidden">▷</div>
         </button>
     </div>
-<hr><table class="dark_table" style="word-break:keep-all">
+<hr><table>
         <thead>
             <tr style="height:50px;">
                 <th>일</th>
@@ -65,6 +67,7 @@
                 </td>
                 <td><date>5</date>
                     <p class="sch">[행사]<span class="detail_shown"> Korea Blockchain Week</span></p><hv><p class="detail_hidden"> Korea Blockchain Week</p><p class="mem">LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</p></hv>
+                    <p class="sch">[라이브]<span class="detail_shown"> 유튜브</span></p><hv><p class="detail_hidden"> 유튜브</p><p class="mem">수민, 마유</p></hv>
                 </td>
                 <td><date>6</date>
                     <p class="sch">[팬싸]<span class="detail_shown"> StarRiver China</span></p><hv><p class="detail_hidden"> StarRiver China</p>20:00<p class="mem">LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</p></hv>
@@ -143,76 +146,5 @@
                 </td>
             </tr>
         </tbody></table></div>
-    <style>    .detail_hidden {
-        display: none;
-    }
-    #title {
-            margin-left: 50px;
-            margin-right: 50px;
-            font-size: 50px;
-    }
-    #body {
-margin-left: auto;
-margin-right: auto;
-text-align: center;
-    }
-        p {
-            margin-top:0px;
-            margin-bottom:0px;
-        }
-    @media (max-width:600px) {
-        .btn {
-            font-size: 40px;
-        }
-        #btn_simple {display:none;}
-        #title {
-            font-size: 40px;
-        }
-        .detail_shown {
-            display: none;
-        }
-        .detail_hidden {
-            display: block;
-        }
-        table {
-            margin-top: 30px;
-            margin-bottom: 30px;
-        }
-        tbody tr {
-  height:85px;
-}
-    }
-    @media (max-width:450px) {
-        #title {
-            margin-left: 30px;
-            margin-right: 30px;
-        }
-table {
-margin-top: 20px;
-margin-bottom: 20px;
-}
-    }
-    @media (max-width:400px) {
-        #title {
-            margin-left: 0px;
-            margin-right: 0px;
-        }
-        #top {
-            text-align: left !important;
-        }
-        #left_btn {display:none;}
-        #left_btn_h {display:inline-block !important;}
-        .btn {
-            font-size:30px;
-        }
-        td {font-size:10px}
-        date {font-size:1.5em}
-    }
-    @media (min-width: 1450px) {
-#body {
-width: 1296px !important;
-}
-td {font-size:15px}</style>
     <script src="script.js"></script>
-
 </body></html>

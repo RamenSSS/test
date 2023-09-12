@@ -24,7 +24,7 @@ function darklight() {
 function simplify() {
     document.querySelector('body').classList.add('simple')
     document.getElementById('btn_simple').innerText = '자세하게 보기'
-    status2='simple'
+    status2='?simple'
 }
 
 function unsimplify() {
@@ -34,7 +34,7 @@ function unsimplify() {
 }
 
 function simple() {
-    if (status2=='simple'){unsimplify()}
+    if (status2=='?simple'){unsimplify()}
     else {simplify()}
 }
 
@@ -49,6 +49,6 @@ if (data.length>1){
 status2 = ''
 if (data.length>2){
     if (data[2]=='simple'){
-        simple()
+        simplify()
     }
 }

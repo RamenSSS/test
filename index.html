@@ -6,6 +6,12 @@
     <link rel="apple-touch-icon" href="android-icon-72x72.png"> 
     <link rel="stylesheet" href="style.css">
     <title>tripleS 스케줄</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <style>
+        * {font-family : 'Nanum Gothic', sans-serif;}
+    </style>
 </head>
 <body class="dark">
     <div id="body" style="width:90%;">
@@ -37,29 +43,35 @@
                 <td class="unupdate">8월</td>
             </tr>
             <tr>
-                <td><a href="#" onclick="location.href='./2309?'+status">9월</a></td>
-                <td><a href="#" onclick="location.href='./2310?'+status">10월</a></td>
+                <td><a href="#" onclick="location.href='./2309?'+status+status2">9월</a></td>
+                <td><a href="#" onclick="location.href='./2310?'+status+status2">10월</a></td>
                 <td class="unupdate">11월</td>
                 <td class="unupdate">12월</td>
             </tr>
         </tbody>
     </table>
     <hr><div class="under" style="clear:both">
-    <div class="left" style="width:50%;">제작자 : 라멘
+    <div class="left">제작자 : 라멘
         <br><br>문의사항 :
         <ul style="padding-left: 25px;">
             <li><a class="link" href="https://open.kakao.com/o/sI2efR7e">오픈카톡</a></li>
-            <li><a class="link" href="https://gall.dcinside.com/m/triplescosmos/10147">dcinside</a></li>
+            <li><a class="link" href="https://gall.dcinside.com/m/triplescosmos/101470">dcinside</a></li>
             <li>Twitter : <a class="link" href="https://twitter.com/Ramen_SSS">@Ramen_SSS</a></li>
             <li>Discord : ramen__</li>
     </ul></div>
-    <div class="right" style="width:50%;w">Thanks to <a class="link" href="https://twitter.com/kuipertwt">@kuipertwt</a> for domain</div></div>
+    <div class="right">Thanks to <a class="link" href="https://twitter.com/kuipertwt">@kuipertwt</a> for domain</div></div>
     </div>
 <style>
-    .dark_table {
+#title {
+  font-size:50px;
+}
+.unupdate {
+  color: #777;
+}
+    .dark table {
         border: 3px solid white;
     }
-    .light_table {
+    .light table {
         border: 3px solid black;
     }
     tbody tr {
@@ -86,11 +98,6 @@ font-size: 15px;
   margin-right: auto;
   text-align: center;
 }
-    #body {
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
     @media (min-width: 427px) and (max-width: 770px) {
         tbody tr {
             height: 75px;
