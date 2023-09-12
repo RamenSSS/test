@@ -50,6 +50,23 @@ date {
 .simple .detail_shown {display: none;}
 .simple .detail_hidden {display: block;}
 #left_btn_h {display:none;}
+#top {
+margin-left: auto;
+margin-right: auto;
+clear: both;
+}
+#substance {
+margin-top: 20px;
+margin-bottom: 20px;
+}
+.left {
+  float: left;
+  text-align: left;
+}
+.right {
+  float: right;
+  text-align:right;
+}
     @media (max-width:600px) {
         .btn {
             font-size: 40px;
@@ -64,9 +81,9 @@ date {
         .detail_hidden {
             display: block;
         }
-        table {
-            margin-top: 30px;
-            margin-bottom: 30px;
+        #substance {
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
         tbody tr {
   height:85px;
@@ -77,9 +94,9 @@ date {
             margin-left: 30px;
             margin-right: 30px;
         }
-table {
-margin-top: 20px;
-margin-bottom: 20px;
+#substance {
+margin-top: 0px;
+margin-bottom: 0px;
 }
     }
     @media (max-width:400px) {
