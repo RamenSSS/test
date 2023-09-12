@@ -86,7 +86,7 @@ p {
 }
 @media (max-width:401px) {
     td {font-size:10px}
-    tbody tr {height:65px;}
+    tbody tr {height:67px;}
     date {font-size:1.5em}
     #title {
         margin-left: 0px;
