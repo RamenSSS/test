@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ko"><head>
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <meta charset="UTF-8">
@@ -7,12 +8,13 @@
     <title>tripleS 스케줄</title>
 </head>
 <body class="dark">
-    <div class="center" style="width:90%;">
+    <div id="body" style="width:90%;">
     <div class="right">
         <button class="main" id="btn_darklight" style="width:100px" onclick="darklight()">라이트 모드</button>
     </div>
-        <div class="title" style="clear:both">
+        <div id="title" style="clear:both">
         <b><a href="https://triplescosmos.com">tripleS</a> 스케줄</b></div>
+    <hr>
     <table class="dark_table" style="">
         <thead>
             <tr>
@@ -61,7 +63,6 @@
         border: 3px solid black;
     }
     tbody tr {
-        height: 100px;
         font-size: 40px;
     }
     td {
@@ -77,8 +78,13 @@
 word-break: keep-all;
 font-size: 15px;
     }
-.title {
-font-size:50px;
+.link {
+  color: #6e2cff;
+}
+#title {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
     @media (min-width: 427px) and (max-width: 770px) {
         tbody tr {
@@ -93,10 +99,10 @@ font-size:50px;
         .under {
             font-size:10px
         }
-table {
-margin-top: 30px;
-margin-bottom: 30px;
-}
+  table {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
     }
     @media (max-width: 427px) {
 .title {
@@ -117,6 +123,10 @@ tbody tr {
 table {
 margin-top: 20px;
 margin-bottom: 20px;
+}
+@media (min-width: 1450px) {
+#body {
+width: 1296px !important;
 }
     }</style>
 <script src="script.js"></script>
