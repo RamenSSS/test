@@ -13,148 +13,129 @@
         * {font-family : 'Nanum Gothic', sans-serif;}
     </style>
 </head>
-<body class="dark">
-    <div id="body" style="width:90%;">
+<body class="dark"><div id="body" style="width:90%;">
     <div class="right">
         <button class="main" id="btn_darklight" style="width:100px" onclick="darklight()">라이트 모드</button>
     </div>
     <div class="hr"><hr></div>
-        <div id="title">
-        <b><a href="https://triplescosmos.com">tripleS</a> 스케줄</b></div>
-    <table class="dark_table" style="">
-        <thead>
-            <tr>
-                <th colspan="4">
-                    <p class="year">2023년</p>
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="unupdate">1월</td>
-                <td class="unupdate">2월</td>
-                <td class="unupdate">3월</td>
-                <td class="unupdate">4월</td>
-            </tr>
-            <tr>
-                <td class="unupdate">5월</td>
-                <td class="unupdate">6월</td>
-                <td class="unupdate">7월</td>
-                <td class="unupdate">8월</td>
-            </tr>
-            <tr>
-                <td><a href="#" onclick="location.href='./2309?'+status+status2">9월</a></td>
-                <td><a href="#" onclick="location.href='./2310?'+status+status2">10월</a></td>
-                <td class="unupdate">11월</td>
-                <td class="unupdate">12월</td>
-            </tr>
-        </tbody>
-    </table>
+    <div id="title"><b><a href="https://triplescosmos.com">tripleS</a> 스케줄</b></div>
+<table class="dark_table" style="">
+<thead>
+    <tr>
+        <th colspan="4">
+            <p class="year">2023년</p>
+        </th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td class="unupdate">1월</td>
+        <td class="unupdate">2월</td>
+        <td class="unupdate">3월</td>
+        <td class="unupdate">4월</td>
+    </tr>
+    <tr>
+        <td class="unupdate">5월</td>
+        <td class="unupdate">6월</td>
+        <td class="unupdate">7월</td>
+        <td class="unupdate">8월</td>
+    </tr>
+    <tr>
+        <td><a href="#" onclick="location.href='./2309?'+status+status2">9월</a></td>
+        <td><a href="#" onclick="location.href='./2310?'+status+status2">10월</a></td>
+        <td class="unupdate">11월</td>
+        <td class="unupdate">12월</td>
+    </tr>
+</tbody></table>
     <div class="hr"><hr></div><div class="under" style="clear:both">
-    <div class="left">제작자 : 라멘
-        <br><br>문의사항 :
+    <div class="left">
+        <p>제작자 : 라멘</p>
+        <p>문의사항 :</p>
         <ul style="padding-left: 25px;">
             <li><a class="link" href="https://open.kakao.com/o/sI2efR7e">오픈카톡</a></li>
-            <li><a class="link" href="https://gall.dcinside.com/m/triplescosmos/101470">dcinside</a></li>
+            <li><a class="link" href="https://gall.dcinside.com/m/triplescosmos/">dcinside</a></li>
             <li>Twitter : <a class="link" href="https://twitter.com/Ramen_SSS">@Ramen_SSS</a></li>
             <li>Discord : ramen__</li>
-    </ul></div>
-    <div class="right">Thanks to <a class="link" href="https://twitter.com/kuipertwt">@kuipertwt</a> for domain</div></div>
+        </ul>
     </div>
+    <div class="right">
+        <p>Thanks to <a class="link" href="https://twitter.com/kuipertwt">@kuipertwt</a> for domain</p>
+    </div></div></div>
 <style>
-#title {
-  font-size:50px;
-}
-.unupdate {
-  color: #777;
-}
-    .dark table {
-        border: 3px solid white;
-    }
-    .light table {
-        border: 3px solid black;
-    }
-    tbody tr {
-        font-size: 40px;
-    }
+    tbody tr {font-size: 40px;}
     td {
         text-align: center;
         vertical-align: middle;
     }
+    table {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .unupdate {color: #777;}
     .year {
         font-size:60px;
         margin-top: 10px;
         margin-bottom: 10px;
     }
+    .link {color: #6e2cff;}
+    .dark table {border: 3px solid white;}
+    .light table {border: 3px solid black;}
     .under {
-word-break: keep-all;
-font-size: 15px;
+        word-break: keep-all;
+        font-size: 15px;
     }
-.link {
-  color: #6e2cff;
-}
-#title {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-.left {
-  float: left;
-  text-align: left;
-  width: 50%;
-}
-.right {
-  float: right;
-  text-align:right;
-  width: 50%;
-}
-    table {
-            margin-top: 40px;
-    margin-bottom: 40px;
+    .left {
+        float: left;
+        text-align: left;
+        width: 50%;
+    }
+    .right {
+        float: right;
+        text-align:right;
+        width: 50%;
+    }
+    #title {
+        font-size:50px;}
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     }
     @media (min-width: 427px) and (max-width: 770px) {
         tbody tr {
             height: 75px;
             font-size: 30px;
         }
+        table {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
         .year {
             font-size:45px;
             margin-top: 10px;
             margin-bottom: 10px;
         }
-        .under {
-            font-size:10px
-        }
-  table {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
+        .under {font-size:10px}
     }
     @media (max-width: 427px) {
-#title {
-font-size:40px;
-}
-tbody tr {
+        tbody tr {
             height: 60px;
             font-size: 20px;
+        }
+        table {
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
         .year {
             font-size:30px;
             margin-top: 10px;
             margin-bottom: 10px;
         }
-.under {
-            font-size:7px
-        }
-table {
-margin-top: 20px;
-margin-bottom: 20px;
-}
-@media (min-width: 1450px) {
-#body {
-width: 1296px !important;
-}
-}</style>
+        .under {font-size:7px}
+        #title {font-size:40px;}
+    @media (min-width: 1450px) {
+        #body {width: 1296px !important;}
+    }
+</style>
 <script src="script.js"></script>
 
 </body></html>
