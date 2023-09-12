@@ -44,10 +44,12 @@ tbody tr {
   border: 1px solid #ddd;
 }
 .dark th {
-  border-bottom: 1px solid #393939;
+  border: 1px solid #393939;
+  border-bottom: 1px solid #fff;
 }
 .light th {
-  border-bottom: 1px solid #ddd;
+  border: 1px solid #ddd;
+  border-bottom: 1px solid #000;
 }
 .dark {
   color: #fff;
