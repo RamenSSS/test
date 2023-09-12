@@ -1,72 +1,62 @@
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
-.hr {
-clear: both;
-padding-top: 1px;
-padding-bottom: 1px;
-}
-.main {
-  font-weight: bold;
-  background-color: #6e2cff;
-  border: 2px solid #6e2cff;
-  border-radius: 5px;
-  color: inherit;
-  width: 75px;
-  height:25px;
-}
-.main:hover {
-  background-color: transparent;
-  color: #6e2cff;
-  }
 table {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  table-layout: fixed;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-collapse: collapse;
-  word-break: keep-all;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    table-layout: fixed;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+    word-break: keep-all;
 }
 th {
-  vertical-align: middle;
-  text-align: center;
+    vertical-align: middle;
+    text-align: center;
 }
-tbody tr {
-  height:100px;
+tbody tr {height:100px;}
+.hr {
+    clear: both;
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
-.dark td {
-  border: 1px solid #393939;
+.main {
+    font-weight: bold;
+    background-color: #6e2cff;
+    border: 2px solid #6e2cff;
+    border-radius: 5px;
+    color: inherit;
+    width: 75px;
+    height:25px;
 }
-.light td {
-  border: 1px solid #ddd;
-}
-.dark th {
-  border: 1px solid #393939;
-  border-bottom: 1px solid #fff;
-}
-.light th {
-  border: 1px solid #ddd;
-  border-bottom: 1px solid #000;
+.main:hover {
+    background-color: transparent;
+    color: #6e2cff;
 }
 .dark {
-  color: #fff;
-  background-color: #1f2023;
+    color: #fff;
+    background-color: #1f2023;
 }
-.dark table {
-  border: 2px solid white;
+.dark table {border: 2px solid white;}
+.dark th {
+    border: 1px solid #393939;
+    border-bottom: 1px solid #fff;
 }
+.dark td {border: 1px solid #393939;}
 .light {
-  color: #000;
-  background-color: #fff;
+    color: #000;
+    background-color: #fff;
 }
-.light table {
-  border: 2px solid black;
+.light table {border: 2px solid black;}
+.light td {border: 1px solid #ddd;}
+.light th {
+    border: 1px solid #ddd;
+    border-bottom: 1px solid #000;
 }
-    #body {
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
+#body {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
