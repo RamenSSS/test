@@ -23,13 +23,13 @@ function darklight() {
 
 function simplify() {
     document.querySelector('body').classList.add('simple')
-    document.getElementById('btn_simple').innerText = '자세하게 보기'
+    try {document.getElementById('btn_simple').innerText = '자세하게 보기'} catch {}
     status2='?simple'
 }
 
 function unsimplify() {
     document.querySelector('body').classList.remove('simple')
-    document.getElementById('btn_simple').innerText = '간단하게 보기'
+    try {document.getElementById('btn_simple').innerText = '간단하게 보기'} catch {}
     status2=''
 }
 
