@@ -28,6 +28,16 @@ p {
     border: transparent;
     color: inherit;
 }
+.sch {
+    color:inherit;
+    background-color:transparent;
+    border:transparent;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    display:block;
+}
 .sch:hover + hv {display: block;}
 .mem {font-size: 0.75em}
 .simple .detail_shown {display: none;}
