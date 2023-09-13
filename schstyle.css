@@ -11,6 +11,7 @@ hv {
     display: none;
     position: absolute;
     word-break:keep-all;
+    font-size: 1.15em;
 }
 date {font-weight:bolder;}
 p {
@@ -41,7 +42,7 @@ p {
     text-align: left;
 }
 .sch:hover + hv {display: block;}
-.mem {font-size: 0.75em}
+.mem {font-size: 0.8em}
 .simple .detail_shown {display: none;}
 .simple .detail_hidden {display: block;}
 .left {
@@ -68,7 +69,7 @@ p {
     font-size: 50px;
 }
 @media (min-width:451px) and (max-width:600px) {
-    tbody tr {height:80px;}
+    tbody tr {height:82px;}
     td {font-size: 14px;}
     .btn {font-size: 40px;}
     .detail_shown {display: none;}
