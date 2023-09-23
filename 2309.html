@@ -3,25 +3,20 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="icon" href="android-icon-72x72.png"> 
     <link rel="apple-touch-icon" href="android-icon-72x72.png"> 
-    <link rel="stylesheet" href="style.css?v=230915">
-    <link rel="stylesheet" href="schstyle.css?v=230915">
+    <link rel="stylesheet" href="style.css?v=230915.11">
+    <link rel="stylesheet" href="schstyle.css?v=230915.7">
     <title>2023년 9월</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
-    <style>
-        * {font-family : 'Nanum Gothic', sans-serif;}
-    </style>
-</head><body class="dark"><div style="width:90%;" id="body">
-    <div class="left">
-        <button class="main" onclick=" window.location.href='./?'+status+status2">메인으로</button>
-    </div>
-    <div class="right">
-        <button class="main" id="btn_simple" style="width:110px" onclick="simple()">간단하게 보기</button>
-        <button class="main" id="btn_darklight" style="width:100px" onclick="darklight()">라이트 모드</button>
-    </div>
-    <div class="hr"><hr></div>
-    <div id="substance">
+</head><body class="dark">
+    <div id="header"><header>
+        <div>
+            <a href="#" onclick="location.href='./?'+status+status2"><img id="home" src="./home.svg"></a>
+        </div>
+        <div>
+            <button class="main" id="btn_simple" onclick="simple()">간단하게 보기</button>
+            <button class="main" id="btn_darklight" onclick="darklight()" style="width: 100px">라이트 모드</button>
+        </div>
+    </header></div>
+    <div id="content">
     <div id="top">
         <button style="color:#777" onclick="alert('업데이트 예정')" class="btn" id="left_btn">◀</button>            
         <b id="title">2023. 09</b>
@@ -35,7 +30,7 @@
     </div>
 <table>
 <thead>
-    <tr style="height:50px;">
+    <tr>
         <th>일</th>
         <th>월</th>
         <th>화</th>
@@ -107,7 +102,6 @@
         </td>
         <td><date>15</date>
             <button class="sch">[팬싸]<span class="detail_shown"> MAKESTAR (영통)</span></button><hv><p class="detail_hidden">MAKESTAR (영통)</p>19:30<p class="mem">LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</p></hv>
-            <button class="sch">[마감]<span class="detail_shown"> 0917 마뮤테 팬싸</span></button><hv><p class="detail_hidden">0917 마뮤테 팬싸</p>23:59</p></hv>
         </td>
         <td><date>16</date>
             <button class="sch">[팬싸]<span class="detail_shown"> MAKESTAR (대면, 영통)</span></button><hv><p class="detail_hidden">MAKESTAR (대면, 영통)</p>17:00<p class="mem">LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</p></hv>
@@ -122,9 +116,11 @@
         <td><date>19</date>
         </td>
         <td><date>20</date>
+            <button class="sch">[팬싸]<span class="detail_shown"> 케타포 (이벤트)</span></button><hv><p class="detail_hidden">케타포 (이벤트)</p>20:30<p class="mem">LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</p></hv>
         </td>
         <td><date>21</date>
             <button class="sch">[행사]<span class="detail_shown"> Philippine Blockchian Week</span></button><hv><p class="detail_hidden">Philippine Blockchian Week</p>유연, 수민, 나경, 연지</p></hv>
+            <button class="sch">[라이브]<span class="detail_shown"> 코토네</span></button><hv><p class="detail_hidden">유튜브</p>22:00<p class="mem">코토네</p></hv>
         </td>
         <td><date>22</date>
         </td>
@@ -136,6 +132,7 @@
             <button class="sch">[콘서트]<span class="detail_shown"> 애틀랜타</span></button><hv><p class="detail_hidden">애틀랜타</p><p class="mem">LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</p></hv>
         </td>
         <td><date>25</date>
+            <button class="sch">[마감]<span class="detail_shown"> FLNK 럭키드로우</span></button><hv><p class="detail_hidden">FLNK 럭키드로우</p>23:59</hv>
         </td>
         <td><date>26</date>
         </td>
@@ -149,6 +146,6 @@
         <td><date>30</date>
         </td>
     </tr>
-</tbody></table></div></div>
+</tbody></table></div>
 <script src="script.js"></script>
 </body></html>
