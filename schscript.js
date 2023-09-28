@@ -6,7 +6,7 @@ $.ajax({
 function setCalender(data) {
   var rawAllDates = data.split(/\r?\n|\r/);
   var allDates = rawAllDates.filter(function(item) {
-    return item !== '';
+    return item !== null && item !== undefined && item !== '';
   });
   var table = '<table><thead><tr><th>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th></tr></thead><tbody>';
   for (var singleDate = 0; singleDate < allDates.length; singleDate++) {
