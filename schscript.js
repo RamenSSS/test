@@ -1,5 +1,5 @@
 $.ajax({
-    url: '2201.csv',
+    url: '2201.txt',
     dataType: 'text'
 }).done(setCalender);
 
@@ -12,7 +12,7 @@ function setCalender(data) {
     }
     table += '<td>'
     if (!(allDates[singleDate] == '0')) {
-      var schS = allDates[singleDate].split(',');
+      var schS = allDates[singleDate].split('%');
       for (var sch = 0; sch < schS.length; sch++) {
         if (sch === 0) {
           table += '<date>' + schS[0] + '</date>'
