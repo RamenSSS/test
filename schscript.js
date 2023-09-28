@@ -18,12 +18,12 @@ function setCalender(data) {
           table += '<date>' + schS[0] + '</date>'
         } else {
           rawSch = schS[sch].split('+')
-          table += '<button class="sch">[' + rawSch[0] + ']<span class="detail_shown"> ' + rawSch[1] + '</span></button><hv><p class="detail_hidden">' + rawSch[1] + '</p>'
-          if (!(rawSch[2] == '0')) {
-            table += rawSch[2]
-          }
+          table += '<button class="sch">[' + rawSch[1] + ']<span class="detail_shown"> ' + rawSch[2] + '</span></button><hv><p class="detail_hidden">' + rawSch[2] + '</p>'
           if (!(rawSch[3] == '0')) {
-            table += '<p class="mem">' + rawSch[3] + '</p>'
+            table += rawSch[3]
+          }
+          if (!(rawSch[4] == '0')) {
+            table += '<p class="mem">' + rawSch[4] + '</p>'
           }
           table += '</hv>'
         }
