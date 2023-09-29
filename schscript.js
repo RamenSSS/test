@@ -39,5 +39,5 @@ function setCalender(data) {
   }
   table += '</tbody>';
   table += '</table>';
-  $('body').append(table);
+  $('#content').append(table);
 }
