@@ -22,7 +22,36 @@
     <div id="content">
     <div id="top">
         <button style="color:#777" onclick="alert('업데이트 예정')" class="btn" id="left_btn">◀</button>            
-        <b id="title">2022. 01</b>
+        <div id="title" style="display:inline-block">
+    <div class="drop">
+        <button style="background-color:transparent;font-size:inherit;border:transparent;color:inherit;font-weight:bolder" id="btn_year">2023.<div id="year_box">
+    <p>2022</p>
+    <p>2023</p>
+</div></button>
+
+    </div>
+    <div class="drop">
+        <button style="background-color:transparent;font-size:inherit;border:transparent;color:inherit;font-weight:bolder" id="btn_year">10<div id="year_box">
+    <p>09</p>
+    <p>10</p>
+</div></button>
+
+    </div><style>
+        #year_box {
+            position:absolute;
+            background-color:#fff;
+color:#000;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+display:none;
+        }
+    #year_box p {
+        padding:10px;
+    }
+    #btn_year:hover #year_box {display:block;}
+#year_box:focus + #year_box {display:none;}
+    .drop {display:inline-block}
+    .drop button {padding:0px;}</style>
+</div>
         <div style="display:inline-block">
         <button style="color:#777;" onclick="alert('업데이트 예정')" class="btn" id="left_btn_h">◀</button>
         <button class="btn" onclick=" window.location.href='./2310?'+status+status2">
