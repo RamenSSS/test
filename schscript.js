@@ -1,9 +1,61 @@
-$.ajax({
-    url: '2201.txt',
+function loadSch(yy,mm) {
+  if (yy=='22' && parseInt(mm) < 5) {
+    alert('존재하지 않는 페이지입니다,')
+  } else {
+  $.ajax({
+    url: './'+yy+mm+'.txt',
     dataType: 'text'
-}).done(setCalender);
+  }).done(setCalender);
+  $('#selectedMonth').text(mm)
+  $('#selectedYear').text('20'+yy+'.')
+  $('#month_box > .selected').removeClass('selected')
+  $('#'+mm).addClass('selected')
+  setyear(yy);
+  setButton(yy,mm);
+  }
+}
+
+function setyear(yy) {
+  $('#year_box > .selected').removeClass('selected')
+  $('#20'+yy).addClass('selected')
+  year = yy
+}
+
+function setButton(yy,mm) {
+  var M = parseInt(mm);
+  var Y = parseInt(yy);
+
+  $('.unupdated').removeClass('unupdated')
+  if (Y==22 && M==05) {
+  $('#left_btn').attr("onclick","alert('첫 번째 페이지입니다.')").addClass('unupdated')
+  $('#left_btn_h').attr("onclick","alert('첫 번째 페이지입니다.')").addClass('unupdated')
+  } else {
+  var prevY = Y
+  var prevM = M - 1
+  if (prevM==0) {
+    prevY += -1;
+    prevM = 12;
+  }
+  prevM = String(prevM).padStart(2,'0');
+  $('#left_btn').attr("onclick","loadSch('"+prevY+"','"+prevM+"')")
+  $('#left_btn_h').attr("onclick","loadSch('"+prevY+"','"+prevM+"')")
+  }
+  if (Y==23 && M==12) {
+  $('#right_btn').attr("onclick","alert('업데이트 예정')").addClass('unupdated')
+  } else {
+  var nextY = Y;
+  var nextM = M + 1;
+  if (nextM==13) {
+    nextY += 1;
+    nextM = 1;
+  }
+  nextM = String(nextM).padStart(2,'0');
+  $('#right_btn').attr("onclick","loadSch('"+nextY+"','"+nextM+"')")
+  }
+}
 
 function setCalender(data) {
+  $('table').remove();
   var rawAllDates = data.split(/\r?\n|\r/);
   var allDates = rawAllDates.filter(function(item) {
     return item !== null && item !== undefined && item !== '';
@@ -41,3 +93,12 @@ function setCalender(data) {
   table += '</table>';
   $('#content').append(table);
 }
+
+function setScroll() {
+  $("#month_box").scrollTop( $("#month_box > .selected").offset().top - $("#01").offset().top - 75 + $("#01").height()/2 );
+  $("#year_box").scrollTop( $("#year_box > .selected").offset().top - $("#2022").offset().top );
+}
+
+setyear('23');
+loadSch('23','10');
+$('.drop').width($('#btn_drop').width()+25);

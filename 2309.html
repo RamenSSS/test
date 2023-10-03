@@ -3,28 +3,57 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="icon" href="android-icon-72x72.png"> 
     <link rel="apple-touch-icon" href="android-icon-72x72.png"> 
-    <link rel="stylesheet" href="style.css?v=230915.12">
-    <link rel="stylesheet" href="schstyle.css?v=230915.7">
+    <link rel="stylesheet" href="style.css?v=230923.2">
+    <link rel="stylesheet" href="schstyle.css?v=230923.14">
     <title>2023년 9월</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </head><body class="dark">
     <div id="header"><header>
         <div>
             <a href="#" onclick="location.href='./?'+status+status2"><img id="home" src="./home.svg"></a>
         </div>
         <div>
-            <button class="main" id="btn_simple" onclick="simple()">간단하게 보기</button>
-            <button class="main" id="btn_darklight" onclick="darklight()" style="width: 100px">라이트 모드</button>
+            <button class="btn main" id="btn_simple" onclick="simple()">간단하게 보기</button>
+            <button class="btn main" id="btn_darklight" onclick="darklight()" style="width: 100px">라이트 모드</button>
+            <button class="btn main" id="btn_help">도움말</button>
         </div>
     </header></div>
     <div id="content">
     <div id="top">
-        <button style="color:#777" onclick="alert('업데이트 예정')" class="btn" id="left_btn">◀</button>            
-        <b id="title">2023. 09</b>
+        <button class="btn arrow" id="left_btn"><span>◀</span></button>            
+        <div id="title" style="display:inline-block">
+    <button id="btn_drop">
+<div class="btn" onclick="setScroll()">
+    <span id="selectedYear">2023.</span>
+    <span id="selectedMonth">10</span>
+</div>
+  <div class="drop">
+<div class="drop_box" id="year_box">
+        <p id="2022" onclick="setyear('22')"><span>2022</span></p>
+        <p id="2023" onclick="setyear('23')"><span>2023</span></p>
+      </div>
+<div class="drop_box" id="month_box">
+        <p id="01" onclick="loadSch(year,'01')"><span>01</span></p>
+        <p id="02" onclick="loadSch(year,'02')"><span>02</span></p>
+        <p id="03" onclick="loadSch(year,'03')"><span>03</span></p>
+        <p id="04" onclick="loadSch(year,'04')"><span>04</span></p>
+        <p id="05" onclick="loadSch(year,'05')"><span>05</span></p>
+        <p id="06" onclick="loadSch(year,'06')"><span>06</span></p>
+        <p id="07" onclick="loadSch(year,'07')"><span>07</span></p>
+        <p id="08" onclick="loadSch(year,'08')"><span>08</span></p>
+        <p id="09" onclick="loadSch(year,'09')"><span>09</span></p>
+        <p id="10" onclick="loadSch(year,'10')"><span>10</span></p>
+        <p id="11" onclick="loadSch(year,'11')"><span>11</span></p>
+        <p id="12" onclick="loadSch(year,'12')"><span>12</span></p>
+      </div>
+  </div>
+    </button> 
+</div>
         <div style="display:inline-block">
-        <button style="color:#777;" onclick="alert('업데이트 예정')" class="btn" id="left_btn_h">◀</button>
-        <button class="btn" onclick=" window.location.href='./2310?'+status+status2">
-            <div class="shown">▶</div>
-            <div class="hidden">▷</div>
+        <button class="btn arrow" id="left_btn_h"><span>◀</span></button>
+        <button class="btn arrow" onclick=" window.location.href='./2310?'+status+status2" id="right_btn">
+            <span>▶</span>
         </button>
         </div>
     </div>
@@ -119,7 +148,7 @@
             <button class="sch">[팬싸]<span class="detail_shown"> 케타포 (이벤트)</span></button><hv><p class="detail_hidden">케타포 (이벤트)</p>20:30<p class="mem">LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</p></hv>
         </td>
         <td><date>21</date>
-            <button class="sch">[행사]<span class="detail_shown"> Philippine Blockchian Week</span></button><hv><p class="detail_hidden">Philippine Blockchian Week</p>유연, 수민, 나경, 연지</p></hv>
+            <button class="sch">[행사]<span class="detail_shown"> Philippine Blockchian Week</span></button><hv><p class="detail_hidden">Philippine Blockchian Week</p><p class="mem">유연, 수민, 나경, 연지</p></hv>
             <button class="sch">[라이브]<span class="detail_shown"> 코토네</span></button><hv><p class="detail_hidden">유튜브</p>22:00<p class="mem">코토네</p></hv>
         </td>
         <td><date>22</date>
@@ -132,14 +161,13 @@
             <button class="sch">[콘서트]<span class="detail_shown"> 애틀랜타</span></button><hv><p class="detail_hidden">애틀랜타</p><p class="mem">LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</p></hv>
         </td>
         <td><date>25</date>
-            <button class="sch">[마감]<span class="detail_shown"> FLNK 럭키드로우</span></button><hv><p class="detail_hidden">FLNK 럭키드로우</p>23:59</hv>
         </td>
         <td><date>26</date>
         </td>
         <td><date>27</date>
         </td>
         <td><date>28</date>
-            <button class="sch">[콘서트]<span class="detail_shown"> 시카고</span></button><hv><p class="detail_hidden">시카고</p><p class="mem">LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</p></hv>
+          <button class="sch">[미팬]<span class="detail_shown"> 시카고</span></button><hv><p class="detail_hidden">시카고</p><p class="mem">LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</p></hv>
         </td>
         <td><date>29</date>
         </td>
@@ -147,5 +175,5 @@
         </td>
     </tr>
 </tbody></table></div>
-<script src="script.js"></script>
+    <script src="schscript.js?v=5"></script>
 </body></html>

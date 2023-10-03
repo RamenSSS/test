@@ -1,3 +1,63 @@
+.drop {
+    position:absolute;
+    display:none;
+    transform: translate(-12px,0);
+    box-shadow:0 0 10px 2px rgba(0,0,0,0.3);
+    justify-content: space-around;
+    font-size: 30px;
+}
+.dark .drop {
+    color:#fff;
+    background-color: #08090b;
+    border: 2px solid #fff;
+}
+.light .drop {
+    color:#000;
+    background-color: #fff;
+    border: 2px solid #000;
+}
+.drop_box {
+display:flex; overflow-y:auto; flex-wrap:nowrap;
+height: 160px;
+flex-direction: column;
+}
+.drop_box::-webkit-scrollbar {
+    width:10px;
+}
+.drop_box::-webkit-scrollbar-thumb {
+    background-color: #6e2cff;
+    border-radius: 5px;
+    background-clip: padding-box;
+}
+.drop_box::-webkit-scrollbar-track {
+        border: 4.8px solid transparent;
+        background-clip: padding-box;
+}
+.dark .drop_box::-webkit-scrollbar-track {background-color:#fff}
+.light .drop_box::-webkit-scrollbar-track {background-color:#000}
+.drop_box p {
+      padding: 0px;
+      margin: 5px;
+flex: 0 0 auto;
+}
+.drop_box span {
+padding: 3px;
+border-radius: 5px;
+}
+.drop_box .selected span {background-color:#6e2cff; color:#fff;}
+.drop_box p:hover:not(.selected) span {background-color:#b59dff;color:#000;}
+#btn_drop {
+background-color:transparent;
+font-size:inherit;
+border:transparent;
+color:inherit;
+font-weight:bolder; 
+}
+.btn, .drop span {cursor: pointer;}
+#btn_drop:focus .drop {display:flex;}
+#year_box {border-right:2px solid grey;width:65%;}
+#month_box {width:35%;}
+    .drop button {padding:0px;}
 td {
     vertical-align : top;
     text-align: left;
@@ -13,22 +73,26 @@ hv {
     display: none;
     position: absolute;
     word-break:keep-all;
-    font-size: 1.15em;
+    /*font-size: 1.15em;*/
 }
 date {font-weight:bolder;}
 p {
     margin: 0px;
 }
 .detail_hidden {display: none;}
-.hidden {display:none;}
-.btn:hover .shown {display:none;}
-.btn:hover .hidden {display:block;}
-.btn {
+.arrow span {padding: 0px 5.5px 3px 5.5px;
+border-radius: 18px;
+}
+.unupdated span {color:#777;}
+.dark .arrow:hover:not(.unupdated) span {background-color: #6e2cff;}
+.light .arrow:hover:not(.unupdated) span {background-color: #b59dff;}
+.arrow {
     font-size: 50px;
     font-weight: bold;
     background-color: transparent;
     border: transparent;
     color: inherit;
+    padding: 0px;
 }
 .sch {
     color: inherit;
@@ -61,7 +125,7 @@ p {
 }
 @media (max-width:600px) {
     tbody tr {height:82px;}
-    .btn {font-size: 40px;}
+    .arrow {font-size: 40px;}
     .detail_shown {display: none;}
     .detail_hidden {display: block;}
     #btn_simple {display:none;}
@@ -70,13 +134,14 @@ p {
         margin: 0px 30px;
     }
     #content {margin: 16px;}
+    .drop {font-size: 20px;}
 }
 @media (max-width:450px) {
     td {font-size:11px}
     tbody tr {height:67px;}
     date {font-size:1.5em}
     #title {margin: 0px;}
-    .btn {font-size:30px;}
+    .arrow {font-size:30px;}
     #top {text-align: left !important;}
     #left_btn {display:none;}
     #left_btn_h {display:inline-block !important;}
