@@ -1,6 +1,7 @@
 function loadSch(yy,mm) {
   if (yy=='22' && parseInt(mm) < 5) {
-    alert('존재하지 않는 페이지입니다,')
+    loadSch('22','05')
+    alert('존재하지 않는 페이지입니다.')
   } else {
   $.ajax({
     url: './'+yy+mm+'.txt',
@@ -26,7 +27,7 @@ function setButton(yy,mm) {
   var Y = parseInt(yy);
 
   $('.unupdated').removeClass('unupdated')
-  if (Y==23 && M==01) {
+  if (Y==22 && M==05) {
   $('#left_btn').attr("onclick","alert('첫 번째 페이지입니다.')").addClass('unupdated')
   $('#left_btn_h').attr("onclick","alert('첫 번째 페이지입니다.')").addClass('unupdated')
   } else {

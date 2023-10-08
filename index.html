@@ -5,8 +5,8 @@
     <link rel="icon" href="android-icon-72x72.png"> 
     <link rel="apple-touch-icon" href="android-icon-72x72.png"> 
     <link rel="stylesheet" href="style.css?v=230923.5">
-    <script src="script.js?v=1"></script>
     <title>tripleS 스케줄</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body class="dark">
     <div id="header"><header>
@@ -19,6 +19,35 @@
     </header></div>
     <div id="content">
     <div id="title"><b><a href="https://triplescosmos.com">tripleS</a> 스케줄</b></div>
+<article>
+<table>
+<thead>
+    <tr>
+        <th colspan="4">
+            <p class="year">2022년</p>
+        </th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a onclick="sessionStorage.setItem('yymm','2205')" href="./calender">5월</a></td>
+        <td><a onclick="sessionStorage.setItem('yymm','2206')" href="./calender">6월</a></td>
+        <td><a onclick="sessionStorage.setItem('yymm','2207')" href="./calender">7월</a></td>
+        <td><a onclick="sessionStorage.setItem('yymm','2208')" href="./calender">8월</a></td>
+    </tr>
+    <tr>
+        <td><a onclick="sessionStorage.setItem('yymm','2209')" href="./calender">9월</a></td>
+        <td><a onclick="sessionStorage.setItem('yymm','2210')" href="./calender">10월</a></td>
+        <td><a onclick="sessionStorage.setItem('yymm','2211')" href="./calender">11월</a></td>
+        <td><a onclick="sessionStorage.setItem('yymm','2212')" href="./calender">12월</a></td>
+    </tr>
+</tbody></table>
 <table>
 <thead>
     <tr>
@@ -63,19 +92,17 @@
     </div></footer></div>
 <style>
     table {
-        margin: 30px auto;
-        width: 60%;
+        margin: 0px 0px;
+        aspect-ratio: 3/2;
     }
-    tbody {font-size: 40px;}
+    tbody {font-size: min(1.8vw, 22px);}
     td {
         text-align: center;
         vertical-align: middle;
-        padding: 20px 0px;
     }
-    .unupdate {color: #777;}
     .year {
-        font-size: 50px;
-        margin: 10px 0px;
+        font-size: min(3.1vw, 43px);
+        margin: 8px 0px;
     }
     .link {color: #6e2cff;}
     .dark table {border: 3px solid white;}
@@ -96,14 +123,22 @@
     p,ul {
         margin: 6px 0px;
     }
+    article {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 30px;
+    }
     @media (min-width: 601px) and (max-width: 997px) {
+        article {grid-template-columns: repeat(2, 1fr);}
         #title {font-size: 50px;}
-        tbody {font-size: 30px;}
-        .year {font-size: 40px;}
+        tbody {font-size: 2.6vw;}
+        .year {font-size: 4.5vw;}
     }
     @media (max-width: 600px) {
-        table {
-            width: 100%;
+        article {
+            grid-template-columns: repeat(1, 1fr);
+            margin: 30px 0px;
         }
         tbody {font-size: 5.5vw;}
         .year {font-size: 9vw;}
@@ -111,5 +146,10 @@
     @media (max-width: 450px) {
         #title {font-size:40px;}
     }
+    @media (min-width: 1232px) {
+        tbody {font-size: 22px;}
+        .year {font-size: 43px;}
+    }
 </style>
+    <script src="script.js?v=1"></script>
 </body></html>
