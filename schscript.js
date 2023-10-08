@@ -4,7 +4,7 @@ function loadSch(yy,mm) {
     alert('존재하지 않는 페이지입니다.')
   } else {
   $.ajax({
-    url: './'+yy+mm+'.txt',
+    url: './txt/'+yy+mm+'.txt',
     dataType: 'text'
   }).done(setCalender);
   $('#selectedMonth').text(mm)
