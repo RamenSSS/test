@@ -28,22 +28,22 @@
 </thead>
 <tbody>
     <tr>
-        <td><a href="#" onclick="location.href='./calender&2301?'+status+status2">1월</a></td>
-        <td><a href="#" onclick="location.href='./calender&2302?'+status+status2">2월</a></td>
-        <td><a href="#" onclick="location.href='./calender&2303?'+status+status2">3월</a></td>
-        <td><a href="#" onclick="location.href='./calender&2304?'+status+status2">4월</a></td>
+        <td><a onclick="sessionStorage.setItem('yymm','2301')" href="./calender">1월</a></td>
+        <td><a onclick="sessionStorage.setItem('yymm','2302')" href="./calender">2월</a></td>
+        <td><a onclick="sessionStorage.setItem('yymm','2303')" href="./calender">3월</a></td>
+        <td><a onclick="sessionStorage.setItem('yymm','2304')" href="./calender">4월</a></td>
     </tr>
     <tr>
-        <td><a href="#" onclick="location.href='./calender&2305?'+status+status2">5월</a></td>
-        <td><a href="#" onclick="location.href='./calender&2306?'+status+status2">6월</a></td>
-        <td><a href="#" onclick="location.href='./calender&2307?'+status+status2">7월</a></td>
-        <td><a href="#" onclick="location.href='./calender&2308?'+status+status2">8월</a></td>
+        <td><a onclick="sessionStorage.setItem('yymm','2305')" href="./calender">5월</a></td>
+        <td><a onclick="sessionStorage.setItem('yymm','2306')" href="./calender">6월</a></td>
+        <td><a onclick="sessionStorage.setItem('yymm','2307')" href="./calender">7월</a></td>
+        <td><a onclick="sessionStorage.setItem('yymm','2308')" href="./calender">8월</a></td>
     </tr>
     <tr>
-        <td><a href="#" onclick="location.href='./calender&2309?'+status+status2">9월</a></td>
-        <td><a href="#" onclick="location.href='./calender&2310?'+status+status2">10월</a></td>
-        <td><a href="#" onclick="location.href='./calender&2311?'+status+status2">11월</a></td>
-        <td><a href="#" onclick="location.href='./calender&2312?'+status+status2">12월</a></td>
+        <td><a onclick="sessionStorage.setItem('yymm','2309')" href="./calender">9월</a></td>
+        <td><a onclick="sessionStorage.setItem('yymm','2310')" href="./calender">10월</a></td>
+        <td><a onclick="sessionStorage.setItem('yymm','2311')" href="./calender">11월</a></td>
+        <td><a onclick="sessionStorage.setItem('yymm','2312')" href="./calender">12월</a></td>
     </tr>
 </tbody></table>
     <footer>
@@ -52,7 +52,7 @@
         <p>문의사항 :</p>
         <ul style="padding-left: 16px;">
             <li><a class="link" href="https://open.kakao.com/o/sI2efR7e">오픈카톡</a></li>
-            <li><a class="link" href="https://gall.dcinside.com/m/triplescosmos/">dcinside</a></li>
+            <li><a class="link" href="https://gall.dcinside.com/m/triplescosmos/10227">dcinside</a></li>
             <li>Twitter : <a class="link" href="https://twitter.com/Ramen_SSS_">@Ramen_SSS_</a></li>
             <li>Discord : ramen__</li>
         </ul>
@@ -83,7 +83,7 @@
     .light footer {border-top: 1px solid #ddd;}
     footer {
         word-break: keep-all;
-        font-size: 2.5vmin;
+        font-size: min(2.5vmin,16px);
         display: flex;
         justify-content: space-between;
         padding-top: 10px;

@@ -100,9 +100,9 @@ function setScroll() {
   $("#year_box").scrollTop( $("#year_box > .selected").offset().top - $("#2022").offset().top );
 }
 
-data0 = location.href.split('&')
-if (data0.length>1){
-var yymm=data0[1].split('?')[0];
+
+if (sessionStorage.getItem('yymm')){
+var yymm = sessionStorage.getItem('yymm');
 loadSch( yymm.slice(0,2) , yymm.slice(2) );
 } else {
 var dt = new Date();

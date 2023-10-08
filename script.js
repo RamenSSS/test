@@ -1,48 +1,41 @@
 function light() {
     $('body').removeClass('dark').addClass('light');
     $('#btn_darklight').text('다크 모드')
-    status='light'
+    isDark='n'
 }
 
 function dark() {
     $('body').removeClass('light').addClass('dark');
     $('#btn_darklight').text('라이트 모드')
-    status='dark'
+    isDark='y'
 }
 
 function darklight() {
-    if (status=='light'){dark()}
+    if (isDark=='n'){dark()}
     else {light()}
+    localStorage.setItem('isDark',isDark)
 }
 
 function simplify() {
     $('body').addClass('simple')
     $('#btn_simple').text('자세하게 보기')
-    status2='?simple'
+    isSimple='y'
 }
 
 function unsimplify() {
     $('body').removeClass('simple')
     $('#btn_simple').text('간단하게 보기')
-    status2=''
+    isSimple='n'
 }
 
 function simple() {
-    if (status2=='?simple'){unsimplify()}
+    if (isSimple=='y'){unsimplify()}
     else {simplify()}
+    localStorage.setItem('isSimple',isSimple)
 }
 
-status = 'dark'
-data = location.href.split('?')
-if (data.length>1){
-    if (data[1]=='light'){
-        darklight()
-    }
-}
+isDark = localStorage.getItem('isDark')
+isSimple = localStorage.getItem('isSimple')
 
-status2 = ''
-if (data.length>2){
-    if (data[2]=='simple'){
-        simplify()
-    }
-}
+if (isDark=='n') {light()}
+if (isSimple=='y') {simplify()}
