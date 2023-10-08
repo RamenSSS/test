@@ -95,10 +95,13 @@ function setCalender(data) {
 }
 
 function setScroll() {
+  $('.drop').width($('#btn_drop').width()+25);
   $("#month_box").scrollTop( $("#month_box > .selected").offset().top - $("#01").offset().top - 75 + $("#01").height()/2 );
   $("#year_box").scrollTop( $("#year_box > .selected").offset().top - $("#2022").offset().top );
 }
 
-setyear('23');
-loadSch('23','10');
-$('.drop').width($('#btn_drop').width()+25);
+data0 = location.href.split('&')
+if (data0.length>1){
+var yymm=data0[1].split('?')[0];
+loadSch( yymm.slice(0,2) , yymm.slice(2) );
+} else { loadSch('23','10') }

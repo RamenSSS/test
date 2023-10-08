@@ -1,3 +1,4 @@
+aside {display:none;}
 .drop {
     position:absolute;
     display:none;
@@ -5,6 +6,7 @@
     box-shadow:0 0 10px 2px rgba(0,0,0,0.3);
     justify-content: space-around;
     font-size: 30px;
+z-index:2;
 }
 .dark .drop {
     color:#fff;
@@ -74,13 +76,15 @@ hv {
     position: absolute;
     word-break:keep-all;
     /*font-size: 1.15em;*/
+max-width: 150px;
+right: 0px;
 }
 date {font-weight:bolder;}
 p {
     margin: 0px;
 }
 .detail_hidden {display: none;}
-.arrow span {padding: 0px 5.5px 3px 5.5px;
+.arrow span {padding: 0px 6px 3px 6px;
 border-radius: 18px;
 }
 .unupdated span {color:#777;}
@@ -126,6 +130,9 @@ border-radius: 18px;
 @media (max-width:600px) {
     tbody tr {height:82px;}
     .arrow {font-size: 40px;}
+.arrow span {padding: 0px 6px 3px 6px;
+border-radius: 14px;
+}
     .detail_shown {display: none;}
     .detail_hidden {display: block;}
     #btn_simple {display:none;}
@@ -142,6 +149,9 @@ border-radius: 18px;
     date {font-size:1.5em}
     #title {margin: 0px;}
     .arrow {font-size:30px;}
+.arrow span {padding: 0px 4.5px 3px 4.5px;
+border-radius: 10px;
+}
     #top {text-align: left !important;}
     #left_btn {display:none;}
     #left_btn_h {display:inline-block !important;}

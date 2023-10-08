@@ -1,7 +1,3 @@
-function change(before, after) {
-    
-}
-
 function light() {
     $('body').removeClass('dark').addClass('light');
     $('#btn_darklight').text('다크 모드')
