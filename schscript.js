@@ -67,12 +67,12 @@ function setCalender(data) {
     }
     table += '<td>'
     if (!(allDates[singleDate] == '0')) {
-      var schS = allDates[singleDate].split('%');
+      var schS = allDates[singleDate].split('●');
       for (var sch = 0; sch < schS.length; sch++) {
         if (sch === 0) {
           table += '<date>' + schS[0] + '</date>'
         } else {
-          rawSch = schS[sch].split('+')
+          rawSch = schS[sch].split('○')
           table += '<button class="sch">[' + rawSch[0] + ']<span class="detail_shown"> ' + rawSch[1] + '</span></button><hv><p class="detail_hidden">' + rawSch[1] + '</p>'
           if (!(rawSch[2] == '0')) {
             table += rawSch[2]
