@@ -26,7 +26,7 @@ function setButton(yy,mm) {
   var Y = parseInt(yy);
 
   $('.unupdated').removeClass('unupdated')
-  if (Y==22 && M==05) {
+  if (Y==23 && M==01) {
   $('#left_btn').attr("onclick","alert('첫 번째 페이지입니다.')").addClass('unupdated')
   $('#left_btn_h').attr("onclick","alert('첫 번째 페이지입니다.')").addClass('unupdated')
   } else {
@@ -104,4 +104,7 @@ data0 = location.href.split('&')
 if (data0.length>1){
 var yymm=data0[1].split('?')[0];
 loadSch( yymm.slice(0,2) , yymm.slice(2) );
-} else { loadSch('23','10') }
+} else {
+var dt = new Date();
+loadSch( String(dt.getFullYear()).slice(2) , String(dt.getMonth()+1).padStart(2,'0');
+}

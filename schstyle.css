@@ -1,4 +1,3 @@
-aside {display:none;}
 .drop {
     position:absolute;
     display:none;
@@ -6,7 +5,7 @@ aside {display:none;}
     box-shadow:0 0 10px 2px rgba(0,0,0,0.3);
     justify-content: space-around;
     font-size: 30px;
-z-index:2;
+z-index:1;
 }
 .dark .drop {
     color:#fff;
@@ -75,12 +74,10 @@ hv {
     display: none;
     position: absolute;
     word-break:keep-all;
-    /*font-size: 1.15em;*/
 max-width: 150px;
-right: 0px;
 }
 date {font-weight:bolder;}
-p {
+hv p {
     margin: 0px;
 }
 .detail_hidden {display: none;}
