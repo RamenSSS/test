@@ -106,5 +106,5 @@ var yymm = sessionStorage.getItem('yymm');
 loadSch( yymm.slice(0,2) , yymm.slice(2) );
 } else {
 var dt = new Date();
-loadSch( String(dt.getFullYear()).slice(2) , String(dt.getMonth()+1).padStart(2,'0');
+loadSch( String(dt.getFullYear()).slice(2) , String(dt.getMonth()+1).padStart(2,'0') );
 }

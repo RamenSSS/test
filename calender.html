@@ -3,15 +3,15 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="icon" href="android-icon-72x72.png"> 
     <link rel="apple-touch-icon" href="android-icon-72x72.png"> 
-    <link rel="stylesheet" href="style.css?v=230923.2">
-    <link rel="stylesheet" href="schstyle.css?v=230923.16">
+    <link rel="stylesheet" href="style.css?v=230923.5">
+    <link rel="stylesheet" href="schstyle.css?v=230923.17">
     <title>2023년 9월</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </head><body class="dark">
     <div id="header"><header>
         <div>
-            <a href="#" onclick="location.href='./?'+status+status2"><img id="home" src="./home.svg"></a>
+            <a href="./"><img id="home" src="./home.svg"></a>
         </div>
         <div>
             <button class="btn main" id="btn_simple" onclick="simple()">간단하게 보기</button>
@@ -29,7 +29,6 @@
 </div>
   <div class="drop">
 <div class="drop_box" id="year_box">
-        <p id="2022" onclick="setyear('22')"><span>2022</span></p>
         <p id="2023" onclick="setyear('23')"><span>2023</span></p>
       </div>
 <div class="drop_box" id="month_box">
@@ -51,128 +50,11 @@
 </div>
         <div style="display:inline-block">
         <button class="btn arrow" id="left_btn_h"><span>◀</span></button>
-        <button class="btn arrow" onclick=" window.location.href='./2310?'+status+status2" id="right_btn">
+        <button class="btn arrow" id="right_btn">
             <span>▶</span>
         </button>
         </div>
     </div>
-<table style="position: relative;">
-<thead>
-    <tr>
-        <th>일</th>
-        <th>월</th>
-        <th>화</th>
-        <th>수</th>
-        <th>목</th>
-        <th>금</th>
-        <th>토</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td><date>1</date>
-            <button class="sch">[음방]<span class="detail_shown"> 뮤직뱅크</span></button><hv><p class="detail_hidden">뮤직뱅크</p>17:15<p class="mem">LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</p></hv>
-            <button class="sch">[팬싸]<span class="detail_shown"> FLNK (대면, 영통)</span></button><hv><p class="detail_hidden">FLNK (대면, 영통)</p>20:00<p class="mem">LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</p></hv>
-        </td>
-        <td><date>2</date>
-            <button class="sch">[음방]<span class="detail_shown"> 음악중심</span></button><hv><p class="detail_hidden">음악중심</p>15:15<p class="mem">LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</p></hv>
-            <button class="sch">[팬싸]<span class="detail_shown"> 후즈팬 스토어 (대면, 영통)</span></button><hv><p class="detail_hidden">후즈팬 스토어 (대면, 영통)</p>19:00<p class="mem">LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</p></hv>
-        </td>
-    </tr>
-    <tr>
-        <td><date>3</date>
-            <button class="sch">[음방]<span class="detail_shown"> 인기가요</span></button><hv><p class="detail_hidden">인기가요</p>15:40<p class="mem">LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</p></hv>
-            <button class="sch">[팬싸]<span class="detail_shown"> 디마뮤 (대면, 영통)</span></button><hv><p class="detail_hidden">디마뮤 (대면, 영통)</p>18:30<p class="mem">LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</p></hv>
-        </td>
-        <td><date>4</date>
-        </td>    
-        <td><date>5</date>
-            <button class="sch">[행사]<span class="detail_shown"> Korea Blockchain Week</span></button><hv><p class="detail_hidden">Korea Blockchain Week</p><p class="mem">LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</p></hv>
-            <button class="sch">[라이브]<span class="detail_shown"> 유튜브</span></button><hv><p class="detail_hidden">유튜브</p>22:00<p class="mem">수민, 마유</p></hv>
-        </td>
-        <td><date>6</date>
-            <button class="sch">[라디오]<span class="detail_shown"> 배성재의 텐 생녹방</span></button><hv><p class="detail_hidden">배성재의 텐 생녹방</p>19:00<p class="mem">서연, 니엔</p></hv>
-            <button class="sch">[팬싸]<span class="detail_shown"> StarRiver China (영통)</span></button><hv><p class="detail_hidden">StarRiver China (영통)</p>20:00<p class="mem">LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</p></hv>
-        </td>
-        <td><date>7</date>
-            <button class="sch">[행사]<span class="detail_shown"> 충남 장애인 체육대회 개막식</span></button><hv><p class="detail_hidden">충남 장애인 체육대회 개막식</p><div>20:50<p class="mem">AAA (혜린, 유연, 나경, 유빈)</div></p></hv>
-            <button class="sch">[기타]<span class="detail_shown"> 올해의 브랜드 대상 시상식</span></button><hv><p class="detail_hidden">올해의 브랜드 대상 시상식</p><p class="mem">서연, 지우, 카에데, 코토네</p></hv>
-            <button class="sch">[라이브]<span class="detail_shown"> 웨이보</span></button><hv><p class="detail_hidden">웨이보</p>22:00<p class="mem">서연, 신위</p></hv>
-        </td>
-        <td><date>8</date>
-            <button class="sch">[팬싸]<span class="detail_shown"> 케타포 (대면, 영통)</span></button><hv><p class="detail_hidden">케타포 (대면, 영통)</p>19:00<p class="mem">LOVElution (혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</p></hv>
-            <button class="sch">[기타]<span class="detail_shown"> 서울패션위크</span></button><hv><p class="detail_hidden">서울패션위크</p><p class="mem">지우, 유연</p></hv>
-        </td>
-        <td><date>9</date>
-            <button class="sch">[행사]<span class="detail_shown"> INK 콘서트</span></button><hv><p class="detail_hidden">INK 콘서트</p>19:00<p class="mem">서연, 다현, 니엔, 소현</p></hv>
-        </td>
-    </tr>
-    <tr>
-        <td><date>10</date>
-            <button class="sch">[팬싸]<span class="detail_shown"> 마뮤테 (대면, 영통)</span></button><hv><p class="detail_hidden">마뮤테 (대면, 영통)</p>14:00<p class="mem">LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</p></hv>
-            <button class="sch">[라디오]<span class="detail_shown"> 배성재의 텐 본방송</span></button><hv><p class="detail_hidden">배성재의 텐 본방송</p>22:00<p class="mem">서연, 니엔</p></hv>
-        </td>
-        <td><date>11</date>
-        </td>
-        <td><date>12</date>
-            <button class="sch">[기념일]<span class="detail_shown"> 유빈 1주년</span></button><hv><p class="detail_hidden">유빈 1주년</p><p class="mem">유빈</p></hv>
-            <button class="sch">[팬싸]<span class="detail_shown"> Yizhiyu (영통)</span></button><hv><p class="detail_hidden">Yizhiyu (영통)</p>20:00<p class="mem">LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</p></hv>
-        </td>
-        <td><date>13</date>
-            <button class="sch">[라이브]<span class="detail_shown"> 유튜브</span></button><hv><p class="detail_hidden">유튜브</p>22:00<p class="mem">서연, 신위</p></hv>
-        </td>
-        <td><date>14</date>
-        </td>
-        <td><date>15</date>
-            <button class="sch">[팬싸]<span class="detail_shown"> MAKESTAR (영통)</span></button><hv><p class="detail_hidden">MAKESTAR (영통)</p>19:30<p class="mem">LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</p></hv>
-        </td>
-        <td><date>16</date>
-            <button class="sch">[팬싸]<span class="detail_shown"> MAKESTAR (대면, 영통)</span></button><hv><p class="detail_hidden">MAKESTAR (대면, 영통)</p>17:00<p class="mem">LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</p></hv>
-        </td>
-    </tr>
-    <tr>
-        <td><date>17</date>
-            <button class="sch">[팬싸]<span class="detail_shown"> 마뮤테 (대면, 영통)</span></button><hv><p class="detail_hidden">마뮤테 (대면, 영통)</p>14:00<p class="mem">LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</p></hv>
-        </td>
-        <td><date>18</date>
-        </td>
-        <td><date>19</date>
-        </td>
-        <td><date>20</date>
-            <button class="sch">[팬싸]<span class="detail_shown"> 케타포 (이벤트)</span></button><hv><p class="detail_hidden">케타포 (이벤트)</p>20:30<p class="mem">LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</p></hv>
-        </td>
-        <td><date>21</date>
-            <button class="sch">[행사]<span class="detail_shown"> Philippine Blockchian Week</span></button><hv><p class="detail_hidden">Philippine Blockchian Week</p><p class="mem">유연, 수민, 나경, 연지</p></hv>
-            <button class="sch">[라이브]<span class="detail_shown"> 코토네</span></button><hv><p class="detail_hidden">유튜브</p>22:00<p class="mem">코토네</p></hv>
-        </td>
-        <td><date>22</date>
-        </td>
-        <td><date>23</date>
-        </td>
-    </tr>
-    <tr>
-        <td><date>24</date>
-            <button class="sch">[콘서트]<span class="detail_shown"> 애틀랜타</span></button><hv><p class="detail_hidden">애틀랜타</p><p class="mem">LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</p></hv>
-        </td>
-        <td><date>25</date>
-        </td>
-        <td><date>26</date>
-        </td>
-        <td><date>27</date>
-        </td>
-        <td><date>28</date>
-          <button class="sch">[미팬]<span class="detail_shown"> 시카고</span></button><hv><p class="detail_hidden">시카고</p><p class="mem">LOVElution (서연, 혜린, 유빈, 카에데, 다현, 니엔, 소현, 신위)</p></hv>
-        </td>
-        <td><date>29</date>
-        </td>
-        <td><date>30</date>
-        </td>
-    </tr>
-</tbody></table></div>
+</div>
     <script src="schscript.js?v=5"></script>
 </body></html>
