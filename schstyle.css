@@ -1,3 +1,24 @@
+.dark {
+    --bg-color: #1f2023;
+    --obj-color: #fff;
+    --inner-border-color: #393939;
+    --cosmo-color: #6e2cff;
+}
+.light {
+    --bg-color: #fff;
+    --obj-color: #000;
+    --inner-border-color: #ddd;
+    --cosmo-color: #b59dff;
+}
+#top {
+    text-align: center;
+    margin: 10px 0px;
+}
+#title {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 50px;
+}
 .drop {
     position:absolute;
     display:none;
@@ -5,22 +26,18 @@
     box-shadow:0 0 10px 2px rgba(0,0,0,0.3);
     justify-content: space-around;
     font-size: 30px;
-z-index:1;
+    z-index:1;
+    color: var(--obj-color);
+    background-color: var(--bg-color); 
+    border: 2px solid var(--obj-color);
 }
 .dark .drop {
-    color:#fff;
-    background-color: #08090b;
-    border: 2px solid #fff;
-}
-.light .drop {
-    color:#000;
-    background-color: #fff;
-    border: 2px solid #000;
+    background-color: #08090b !important;
 }
 .drop_box {
-display:flex; overflow-y:auto; flex-wrap:nowrap;
-height: 160px;
-flex-direction: column;
+    display:flex; overflow-y:auto; flex-wrap:nowrap;
+    height: 160px;
+    flex-direction: column;
 }
 .drop_box::-webkit-scrollbar {
     width:10px;
@@ -31,62 +48,41 @@ flex-direction: column;
     background-clip: padding-box;
 }
 .drop_box::-webkit-scrollbar-track {
-        border: 4.8px solid transparent;
-        background-clip: padding-box;
+    border: 4.8px solid transparent;
+    background-clip: padding-box;
+    background-color: var(--obj-color);
 }
-.dark .drop_box::-webkit-scrollbar-track {background-color:#fff}
-.light .drop_box::-webkit-scrollbar-track {background-color:#000}
 .drop_box p {
-      padding: 0px;
-      margin: 5px;
-flex: 0 0 auto;
+    padding: 0px;
+    margin: 5px;
+    flex: 0 0 auto;
 }
 .drop_box span {
-padding: 3px;
-border-radius: 5px;
+    padding: 3px;
+    border-radius: 5px;
 }
 .drop_box .selected span {background-color:#6e2cff; color:#fff;}
 .drop_box p:hover:not(.selected) span {background-color:#b59dff;color:#000;}
 #btn_drop {
-background-color:transparent;
-font-size:inherit;
-border:transparent;
-color:inherit;
-font-weight:bolder; 
+    background-color:transparent;
+    font-size:inherit;
+    border:transparent;
+    color:inherit;
+    font-weight:bolder; 
 }
 .btn, .drop span {cursor: pointer;}
 #btn_drop:focus .drop {display:flex;}
-#year_box {border-right:2px solid grey;width:65%;}
+#year_box {
+    border-right:2px solid grey;
+    width:65%;
+}
 #month_box {width:35%;}
-    .drop button {padding:0px;}
-td {
-    vertical-align : top;
-    text-align: left;
-    font-size: 14px;
+.drop button {padding:0px;}
+.arrow span {
+    padding: 0px 6px 3px 6px;
+    border-radius: 18px;
 }
-th {font-size:20;}
-tbody tr {height:100px;}
-thead tr {height: 50px;}
-hv {
-    padding: 10px 10px;
-    background-color: rgba(70,70,70,0.8);
-    color: #ffffff;
-    display: none;
-    position: absolute;
-    word-break:keep-all;
-max-width: 150px;
-}
-date {font-weight:bolder;}
-hv p {
-    margin: 0px;
-}
-.detail_hidden {display: none;}
-.arrow span {padding: 0px 6px 3px 6px;
-border-radius: 18px;
-}
-.unupdated span {color:#777;}
-.dark .arrow:hover:not(.unupdated) span {background-color: #6e2cff;}
-.light .arrow:hover:not(.unupdated) span {background-color: #b59dff;}
+.arrow:hover:not(.unupdated) span {background-color: var(--cosmo-color);}
 .arrow {
     font-size: 50px;
     font-weight: bold;
@@ -94,6 +90,29 @@ border-radius: 18px;
     border: transparent;
     color: inherit;
     padding: 0px;
+}
+.unupdated span {color:#777;}
+#left_btn_h {display:none;}
+td {
+    vertical-align : top;
+    text-align: left;
+    font-size: 14px;
+}
+th {font-size:20;}
+tbody tr {height:max(100px,calc((85vh - 210.4px)/6));}
+thead tr {height: 50px;}
+date {font-weight:bolder;}
+hv {
+    padding: 10px 10px;
+    background-color: rgba(70,70,70,0.8);
+    color: #ffffff;
+    display: none;
+    position: absolute;
+    word-break:keep-all;
+    max-width: 150px;
+}
+hv p {
+    margin: 0px;
 }
 .sch {
     color: inherit;
@@ -106,32 +125,27 @@ border-radius: 18px;
 }
 .sch:hover + hv {display: block;}
 .mem {font-size: 0.8em}
+.schTitle {font-weight: bold;}
+.detail_hidden {display: none;}
 .simple .detail_shown {display: none;}
 .simple .detail_hidden {display: block;}
-#top {
-    text-align: center;
-    margin: 10px 0px;
-}
-#left_btn_h {display:none;}
-#title {
-    margin-left: 50px;
-    margin-right: 50px;
-    font-size: 50px;
-}
+.simple .schTitle {font-weight: normal;}
 @media (min-width: 601px) {
     .simple td{font-size: 16px;}
 }
 @media (max-width: 900px) {
-    tbody tr {height: 118px;}
+    tbody tr {height: max(118px,calc((85vh - 210.4px)/6));}
 }
 @media (max-width:600px) {
-    tbody tr {height:82px;}
+    tbody tr {height: max(82px,calc((85vh - 191px)/6));}
     .arrow {font-size: 40px;}
-.arrow span {padding: 0px 6px 3px 6px;
-border-radius: 14px;
-}
+    .arrow span {
+        padding: 0px 6px 3px 6px;
+        border-radius: 14px;
+    }
     .detail_shown {display: none;}
     .detail_hidden {display: block;}
+    .schTitle {font-weight: normal;}
     #btn_simple {display:none;}
     #title {
         font-size: 40px;
@@ -142,13 +156,14 @@ border-radius: 14px;
 }
 @media (max-width:450px) {
     td {font-size:11px}
-    tbody tr {height:67px;}
+    tbody tr {height: max(67px,calc((85vh - 183px)/6));}
     date {font-size:1.5em}
     #title {margin: 0px;}
     .arrow {font-size:30px;}
-.arrow span {padding: 0px 4.5px 3px 4.5px;
-border-radius: 10px;
-}
+    .arrow span {
+        padding: 0px 4.5px 3px 4.5px;
+        border-radius: 10px;
+    }
     #top {text-align: left !important;}
     #left_btn {display:none;}
     #left_btn_h {display:inline-block !important;}
